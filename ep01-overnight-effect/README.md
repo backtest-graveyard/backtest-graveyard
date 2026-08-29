@@ -1,6 +1,6 @@
 # Episode 1 — The Overnight Effect: Real Anomaly, No Tradable Edge
 
-**Video:** [watch on YouTube](https://youtu.be/5qfa33NTavM)
+**Video:** [watch on YouTube](https://youtu.be/83HvnC28VKs)
 **Verdict: DEAD.** The viral overnight-return anomaly is real, but no tradable version of it survives honest testing.
 
 ## Origin
