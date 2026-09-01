@@ -1,6 +1,6 @@
 # Episode 2 — Gap-and-Go: Real Edge, Not Bottle-able
 
-**Video:** [watch on YouTube](https://youtu.be/UwaxnD3bStE)
+**Video:** [watch on YouTube](https://youtu.be/RF2WZ8EH1vE)
 **Verdict: teachable, not deployable.** The pattern is real and a disciplined scan surfaces it, but on retail data and retail fills a bot can't capture it — the profit is a handful of unpredictable "monster" mornings. One honest, mechanizable edge survives: **avoid serial diluters.**
 
 ## Origin
