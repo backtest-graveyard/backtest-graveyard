@@ -7,6 +7,7 @@ Each episode folder contains the full write-up, the backtest code, and the chart
 | Episode | Verdict |
 |---|---|
 | [01 — The Overnight Effect](ep01-overnight-effect/) | real anomaly, no tradable edge. DEAD. |
+| [02 — Gap-and-Go](ep02-gap-and-go/) | real edge, not bottle-able. Teachable, not deployable. |
 
 ## Ground rules
 
