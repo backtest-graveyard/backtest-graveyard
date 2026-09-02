@@ -8,6 +8,7 @@ Each episode folder contains the full write-up, the backtest code, and the chart
 |---|---|
 | [01 — The Overnight Effect](ep01-overnight-effect/) | real anomaly, no tradable edge. DEAD. |
 | [02 — Gap-and-Go](ep02-gap-and-go/) | real edge, not bottle-able. Teachable, not deployable. |
+| [03 — The Kelly Criterion](ep03-kelly-sizing/) | the "optimal" bet size made a working bot worse. Keep boring sizing. |
 
 ## Ground rules
 

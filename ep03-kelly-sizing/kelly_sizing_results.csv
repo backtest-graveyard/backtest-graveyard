@@ -1,0 +1,5 @@
+variant,avg_gross_exposure,full_period_return,MAR,Sortino,MaxDD,trailing_12mo_MAR,top5day_profit_share
+constant-risk (volatility-target),0.35,+51.2%,2.05,1.96,-6.2%,3.09,22%
+Kelly x0.25 (quarter),0.49,+56.2%,1.73,2.20,-8.0%,3.16,21%
+Kelly x0.50 (half),0.54,+50.6%,1.52,2.07,-8.3%,2.91,21%
+Kelly x1.00 (full),0.58,+47.6%,1.42,2.05,-8.5%,2.72,21%
