@@ -11,6 +11,7 @@ Each episode folder contains the full write-up, the backtest code, and the chart
 | [03 — The Kelly Criterion](ep03-kelly-sizing/) | the "optimal" bet size made a working bot worse. Keep boring sizing. |
 | [04 — The 51% → $100B Math](ep04-rentec-51pct/) | every number's real, the edge is zero. Infrastructure, not a strategy. |
 | [07 — Kronos, the "GPT for candlesticks" AI](ep07-kronos-foundation-model/) | a real forecaster, no proven edge — and 4–5× worse at vol than a 1990s one-liner. |
+| [08 — The Viral "VIX Cheat Sheet"](ep08-vix-cheatsheet/) | half-true. "Buy the panic" is a real seatbelt, not an engine — and it still loses to buy-and-hold. |
 
 ## Ground rules
 
