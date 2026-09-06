@@ -13,6 +13,7 @@ Each episode folder contains the full write-up, the backtest code, and the chart
 | [05 — GEX / Dealer Hedging](ep05-gex-dealer-hedging/) | half-real. A genuine vol-regime read, wrapped in a survivorship jackpot and a stale 0DTE signal. |
 | [07 — Kronos, the "GPT for candlesticks" AI](ep07-kronos-foundation-model/) | a real forecaster, no proven edge — and 4–5× worse at vol than a 1990s one-liner. |
 | [08 — The Viral "VIX Cheat Sheet"](ep08-vix-cheatsheet/) | half-true. "Buy the panic" is a real seatbelt, not an engine — and it still loses to buy-and-hold. |
+| [09 — Buy QQQM Below Its 200-Day, Trail Out](ep09-qqqm-dip-trail/) | real rule, but buy-and-hold wins. Time in the market beats timing the dip. |
 
 ## The book
 
