@@ -1,0 +1,33 @@
+Markov slots (EQUAL-9 live): ['btc', 'sol', 'nvda', 'aapl', 'gld', 'slv', 'dbc', 'ura', 'uso']
+Common window: 2023-03-29 → 2026-06-29  (815 days)
+Correlation(markov, dbmr) = +0.115
+
+========================================================================================================
+BASELINES
+========================================================================================================
+Markov book (EQUAL-9)              | MAR  2.27 | Sortino  1.86 | Sharpe  1.45 | CAGR  14.2% | MaxDD   -6.3%
+DBMR book (4% carry)               | MAR  3.56 | Sortino  1.72 | Sharpe  1.97 | CAGR   6.1% | MaxDD   -1.7%
+
+========================================================================================================
+A) RISK-SPLIT  (w_markov + w_dbmr = 1) — does DBMR diversify Markov's risk budget?
+========================================================================================================
+  100% Markov / 0% DBMR            | MAR  2.27 | Sortino  1.86 | Sharpe  1.45 | CAGR  14.2% | MaxDD   -6.3%  <-- Markov-only
+  90% Markov / 10% DBMR            | MAR  2.43 | Sortino  1.92 | Sharpe  1.50 | CAGR  13.4% | MaxDD   -5.5%
+  80% Markov / 20% DBMR            | MAR  2.62 | Sortino  2.00 | Sharpe  1.56 | CAGR  12.6% | MaxDD   -4.8%
+  70% Markov / 30% DBMR            | MAR  2.87 | Sortino  2.10 | Sharpe  1.63 | CAGR  11.8% | MaxDD   -4.1%
+  60% Markov / 40% DBMR            | MAR  3.23 | Sortino  2.21 | Sharpe  1.72 | CAGR  11.0% | MaxDD   -3.4%
+  50% Markov / 50% DBMR            | MAR  3.67 | Sortino  2.36 | Sharpe  1.84 | CAGR  10.2% | MaxDD   -2.8%
+  risk-parity (19/80)              | MAR  4.73 | Sortino  2.86 | Sharpe  2.29 | CAGR   7.7% | MaxDD   -1.6%
+
+========================================================================================================
+B) ADDITIVE  (Markov 100% + DBMR on idle cash) — helps the ~13%-deployed live account?
+========================================================================================================
+  Markov + 0.00x DBMR overlay      | MAR  2.27 | Sortino  1.86 | Sharpe  1.45 | CAGR  14.2% | MaxDD   -6.3%
+  Markov + 0.25x DBMR overlay      | MAR  2.65 | Sortino  2.08 | Sharpe  1.62 | CAGR  15.9% | MaxDD   -6.0%
+  Markov + 0.50x DBMR overlay      | MAR  3.05 | Sortino  2.29 | Sharpe  1.78 | CAGR  17.6% | MaxDD   -5.8%
+  Markov + 1.00x DBMR overlay      | MAR  3.84 | Sortino  2.66 | Sharpe  2.07 | CAGR  21.2% | MaxDD   -5.5%
+
+========================================================================================================
+VERDICT INPUTS: corr=+0.115 | Markov-only MAR 2.27/Sortino 1.86
+Best risk-split by MAR: 50/50 (MAR 3.67/Sortino 2.36)
+If no blend beats Markov-only on BOTH MAR and Sortino, the overlay does not add risk-adjusted value.

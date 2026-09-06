@@ -14,6 +14,20 @@ Each episode folder contains the full write-up, the backtest code, and the chart
 | [07 — Kronos, the "GPT for candlesticks" AI](ep07-kronos-foundation-model/) | a real forecaster, no proven edge — and 4–5× worse at vol than a 1990s one-liner. |
 | [08 — The Viral "VIX Cheat Sheet"](ep08-vix-cheatsheet/) | half-true. "Buy the panic" is a real seatbelt, not an engine — and it still loses to buy-and-hold. |
 
+## The book
+
+**[The Backtest Graveyard](book/)** — the same method applied to fourteen strategies,
+with the failures published. Thirteen are dead. The fourteenth is boring.
+
+[`book/`](book/) holds the result file behind every figure in the book, the harnesses
+that produced them, and — start here — [`book/killtests/killtests.py`](book/killtests/killtests.py),
+the kill tests as importable functions with no dependencies beyond the standard
+library. [`book/MANIFEST.md`](book/MANIFEST.md) maps every chapter to its sources.
+
+The book and the channel overlap: several episodes above are chapters, and the
+result files are shared. Where a verdict differs in wording, the book is the later
+and more careful statement.
+
 ## Ground rules
 
 - **Nothing is for sale.** No course, no Discord, no signals.

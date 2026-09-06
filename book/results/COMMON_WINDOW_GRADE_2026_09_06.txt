@@ -1,0 +1,36 @@
+========================================================================================================
+COMMON-WINDOW GRADE — the ragged-window artifact, measured
+========================================================================================================
+
+FLEET: 6-asset (README headline)  ->  BTC-USD, SOL-USD, NVDA, AAPL, QQQ, GLD
+  slot first-valid dates:
+      BTC-USD    2017-10-03
+      NVDA       2018-03-28
+      AAPL       2018-03-28
+      QQQ        2018-03-28
+      GLD        2018-03-28
+      SOL-USD    2021-05-07
+
+  RAGGED     2017-10-03 -> 2026-09-04  n=3259  MAR  1.59 | Sortino  2.36 | CAGR   17.6% | MaxDD  -11.0%
+  COMMON     2021-05-07 -> 2026-09-04  n=1947  MAR  1.48 | Sortino  2.22 | CAGR   16.3% | MaxDD  -11.0%
+
+  ARTIFACT: MAR -0.12 (-7%) | Sortino -0.14 | 1312 phantom days removed
+  Common-window gates: rolling-12mo hit 91% | max per-asset share 43% | strip-top-5-months positive True | 2x-cost MAR 1.29 / Sortino 1.79
+  Ship bar on the honest window: PASS (concentration gate FAIL at 43% vs 35% bar)
+
+FLEET: 4-asset (active fleet)  ->  BTC-USD, SOL-USD, NVDA, AAPL
+  slot first-valid dates:
+      BTC-USD    2017-10-03
+      NVDA       2018-03-28
+      AAPL       2018-03-28
+      SOL-USD    2021-05-07
+
+  RAGGED     2017-10-03 -> 2026-09-04  n=3259  MAR  1.75 | Sortino  2.45 | CAGR   23.0% | MaxDD  -13.2%
+  COMMON     2021-05-07 -> 2026-09-04  n=1947  MAR  1.61 | Sortino  2.26 | CAGR   21.2% | MaxDD  -13.2%
+
+  ARTIFACT: MAR -0.14 (-8%) | Sortino -0.19 | 1312 phantom days removed
+  Common-window gates: rolling-12mo hit 92% | max per-asset share 47% | strip-top-5-months positive True | 2x-cost MAR 1.49 / Sortino 1.93
+  Ship bar on the honest window: PASS (concentration gate FAIL at 47% vs 35% bar)
+
+========================================================================================================
+Report the COMMON row. The ragged row is shown only to size the artifact.

@@ -1,0 +1,40 @@
+
+Grading Markov on the trend-follower's A+ rubric harness (independent verification)
+
+====================================================================================================
+FLEET: 6-asset (README headline)  ->  BTC-USD, SOL-USD, NVDA, AAPL, QQQ, GLD
+====================================================================================================
+  Bars: 3259 | window 2017-10-03 -> 2026-09-04
+
+  (a) Markov-native (rf=0,  365/yr):  MAR 1.59 | Sortino 2.36 | Sharpe 1.89 | CAGR 17.6% | MaxDD -11.0%
+  (b) Rubric harness (rf=2%, 365/yr): MAR 1.59 | Sortino 2.07 | Sharpe 1.66 | CAGR 17.6% | MaxDD -11.0%
+
+  Robustness:
+    rolling-12mo hit rate:     95%   (A+ bar >=70%)
+    max per-asset P&L share:   39%   (6/6 positive)   (A+ bar <=35%)
+    per-asset P&L share:       BTC-USD 39%, NVDA 23%, SOL-USD 17%, AAPL 14%, QQQ 4%, GLD 3%
+    strip-top-5-months stays +: True   (top-5-month share 30%)
+    2x-cost (10bps/side): MAR 1.41 / Sortino 1.94 -> PASS
+
+  >>> RUBRIC GRADE (rf=2%): A-   (one market = 39% of P&L)
+  >>> vs README's own A+ bars (MAR>=1.5 & Sortino>=2.0, native): MATCHES A+
+
+====================================================================================================
+FLEET: 4-asset (active fleet)  ->  BTC-USD, SOL-USD, NVDA, AAPL
+====================================================================================================
+  Bars: 3259 | window 2017-10-03 -> 2026-09-04
+
+  (a) Markov-native (rf=0,  365/yr):  MAR 1.75 | Sortino 2.45 | Sharpe 1.92 | CAGR 23.0% | MaxDD -13.2%
+  (b) Rubric harness (rf=2%, 365/yr): MAR 1.75 | Sortino 2.22 | Sharpe 1.74 | CAGR 23.0% | MaxDD -13.2%
+
+  Robustness:
+    rolling-12mo hit rate:     95%   (A+ bar >=70%)
+    max per-asset P&L share:   42%   (4/4 positive)   (A+ bar <=35%)
+    per-asset P&L share:       BTC-USD 42%, NVDA 25%, SOL-USD 18%, AAPL 15%
+    strip-top-5-months stays +: True   (top-5-month share 33%)
+    2x-cost (10bps/side): MAR 1.63 / Sortino 2.13 -> PASS
+
+  >>> RUBRIC GRADE (rf=2%): A-   (one market = 42% of P&L)
+  >>> vs README's own A+ bars (MAR>=1.5 & Sortino>=2.0, native): MATCHES A+
+
+Written to MARKOV_GRADE_RESULTS.md
