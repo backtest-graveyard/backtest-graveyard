@@ -14,6 +14,7 @@ Each episode folder contains the full write-up, the backtest code, and the chart
 | [07 — Kronos, the "GPT for candlesticks" AI](ep07-kronos-foundation-model/) | a real forecaster, no proven edge — and 4–5× worse at vol than a 1990s one-liner. |
 | [08 — The Viral "VIX Cheat Sheet"](ep08-vix-cheatsheet/) | half-true. "Buy the panic" is a real seatbelt, not an engine — and it still loses to buy-and-hold. |
 | [09 — Buy QQQM Below Its 200-Day, Trail Out](ep09-qqqm-dip-trail/) | real rule, but buy-and-hold wins. Time in the market beats timing the dip. |
+| [10 — MACD + the "Profitability Multiplier" Volume Filter](ep10-macd-volume/) | the volume filter didn't multiply profit — it's a brake, not an engine. ~0% net of cost. |
 
 ## The book
 
