@@ -15,6 +15,7 @@ Each episode folder contains the full write-up, the backtest code, and the chart
 | [08 — The Viral "VIX Cheat Sheet"](ep08-vix-cheatsheet/) | half-true. "Buy the panic" is a real seatbelt, not an engine — and it still loses to buy-and-hold. |
 | [09 — Buy QQQM Below Its 200-Day, Trail Out](ep09-qqqm-dip-trail/) | real rule, but buy-and-hold wins. Time in the market beats timing the dip. |
 | [10 — MACD + the "Profitability Multiplier" Volume Filter](ep10-macd-volume/) | the volume filter didn't multiply profit — it's a brake, not an engine. ~0% net of cost. |
+| [11 — Dollar-Cost Averaging vs. Lump-Sum](ep11-dca-vs-lumpsum/) | the "responsible" drip loses ~2 of 3 over 100 years. DCA is a seatbelt, not an engine. |
 
 ## The book
 
