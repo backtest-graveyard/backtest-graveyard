@@ -4,3 +4,4 @@ __pycache__/
 __pycache__/
 *.pyc
 ep15-momentum-factor/cache/
+ep16-golden-cross/ff_daily_factors.csv
