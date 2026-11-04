@@ -6,3 +6,4 @@ __pycache__/
 ep15-momentum-factor/cache/
 ep16-golden-cross/ff_daily_factors.csv
 ep17-hfea-leverage/*.csv
+ep18-covered-call-etfs/*.csv
