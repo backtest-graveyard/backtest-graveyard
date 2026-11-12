@@ -1,0 +1,73 @@
+Fetching 4Hour bars for 2 pairs  (2021-09-16 → 2026-09-16,  +220d warmup) …
+  BTC/USD daily regime … 2047 daily bars  (BULL=908  NEUTRAL=80  BEAR=860)
+  BTC/USD (4Hour) … 12281 bars
+  ETH/USD (4Hour) … 12281 bars
+
+Simulating 3 system(s) × 2 pairs on 4Hour bars …
+  20d/10d (120/60 bars)  →  121 trades  +$78,062  (40% win rate)  MAR=0.44
+  30d/15d (180/90 bars)  →  107 trades  +$82,798  (42% win rate)  MAR=0.64
+  55d/20d (330/120 bars)  →  98 trades  +$73,696  (38% win rate)  MAR=0.57
+
+===========================================================================
+  Crypto Backtest  |  Donchian Breakout  |  4Hour bars  |  THREE-REGIME
+  Regime: BULL≥1.05×SMA200 (1.5× risk, 4 slots)  NEUTRAL (1.0× risk, 3 slots)  BEAR=blocked
+  Exit: 4× ATR trail stop OR Donchian breakdown
+  Period: 2021-09-16 → 2026-09-16
+  Days:   BULL=908 (49%)  NEUTRAL=80 (4%)  BEAR=860 (47%)
+  Budget: $249,771  |  Base risk/trade: 1%  |  Bull risk/trade: 1.5%
+  Slippage: 0.10% per side  (0.20% round-trip cost before spread)
+===========================================================================
+
+  SYSTEM COMPARISON — P&L
+
+  System                Trades    Win%           P&L    Return        Max DD   Avg hold
+  -------------------------------------------------------------------------------------
+  20d entry / 10d exit     121     40%      +$78,062    +31.3%  -$    32,412      4.6d
+  30d entry / 15d exit     107     42%      +$82,798    +33.1%  -$    23,540      4.8d  ◄
+  55d entry / 20d exit      98     38%      +$73,696    +29.5%  -$    23,540      4.7d
+
+  SYSTEM COMPARISON — RISK-ADJUSTED  (◄ = best MAR)
+
+  System                   CAGR   MaxDD%     MAR   Sortino      PF       Avg W       Avg L
+  ----------------------------------------------------------------------------------------
+  20d entry / 10d exit    +5.7%    13.0%    0.44     +1.46    1.46     +$5,077     $-2,371
+  30d entry / 15d exit    +6.0%     9.4%    0.64     +1.76    1.56     +$5,139     $-2,395  ◄
+  55d entry / 20d exit    +5.4%     9.4%    0.57     +1.66    1.54     +$5,680     $-2,237
+
+    MAR = CAGR / |Max DD%|  (target ≥ 0.5; trend systems often 0.3-1.5)
+    Sortino = annualized return / downside deviation  (target ≥ 1.0)
+    PF = profit factor = gross wins / |gross losses|  (target ≥ 1.5)
+
+  PER-PAIR DETAIL  (best: 30d entry / 15d exit)
+
+  Pair          Trades   Wins    Win%           P&L        Best       Worst
+  -------------------------------------------------------------------------
+  BTC/USD           56     23     41%      +$28,518    +$43,078     $-4,704
+  ETH/USD           51     22     43%      +$54,280    +$18,686     $-6,170
+  -------------------------------------------------------------------------
+  TOTAL            107     45     42%      +$82,798
+
+  TOP 5 WINNERS  (30d / 15d):
+    BTC/USD     entry=28503.1932  exit=43250.9449  P&L=  +$43,078  (+51.7%)    7d  [trail_stop]  2023-10-16
+    ETH/USD     entry= 2161.9693  exit= 2808.9314  P&L=  +$18,686  (+29.9%)    2d  [trail_stop]  2023-12-02
+    ETH/USD     entry= 1794.0627  exit= 2244.9937  P&L=  +$15,695  (+25.1%)    0d  [trail_stop]  2023-03-17
+    ETH/USD     entry= 2955.9230  exit= 3565.1222  P&L=  +$12,869  (+20.6%)   13d  [trail_stop]  2025-07-10
+    ETH/USD     entry= 3390.2869  exit= 4005.6368  P&L=  +$11,334  (+18.2%)    5d  [trail_stop]  2024-02-28
+
+  TOP 5 LOSERS  (30d / 15d):
+    ETH/USD     entry= 2418.3509  exit= 2261.8885  P&L=   $-4,040  (-6.5%)    2d  [trail_stop]  2023-12-28
+    ETH/USD     entry= 2725.9833  exit= 2547.3151  P&L=   $-4,093  (-6.6%)    8d  [trail_stop]  2025-05-23
+    ETH/USD     entry= 1776.9115  exit= 1650.9969  P&L=   $-4,425  (-7.1%)    1d  [trail_stop]  2023-03-14
+    BTC/USD     entry=47076.5210  exit=43530.3546  P&L=   $-4,704  (-7.5%)    2d  [trail_stop]  2024-01-08
+    ETH/USD     entry= 2694.5198  exit= 2428.2547  P&L=   $-6,170  (-9.9%)    5d  [trail_stop]  2025-05-13
+
+  EXIT REASONS  (30d / 15d):
+    trail_stop           107
+
+  REGIME BREAKDOWN  (30d / 15d):
+  Regime      Trades    Win%           P&L    Avg notional
+  --------------------------------------------------------
+  BULL            99     39%      +$30,680  $      62,443
+  NEUTRAL          8     75%      +$52,118  $      83,257
+
+===========================================================================

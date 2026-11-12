@@ -1,0 +1,402 @@
+{
+  "window": {
+    "start": "2021-09-16",
+    "end": "2026-09-16"
+  },
+  "budget": 249771,
+  "pairs": [
+    "BTC/USD",
+    "ETH/USD"
+  ],
+  "data_source": "Alpaca v1beta3 crypto (BTC/USD, ETH/USD); BTC daily 200SMA regime",
+  "timeframes": {
+    "1Day": {
+      "bars_per_day": 1,
+      "atr_period_bars": 14,
+      "n_bars": {
+        "BTC/USD": 2047,
+        "ETH/USD": 2047
+      },
+      "best_mar_system": "55d/20d",
+      "systems": {
+        "20d/10d": {
+          "combined": {
+            "stats": {
+              "n": 60,
+              "wins": 25,
+              "win_pct": 41.666667,
+              "pnl": 47473.079047,
+              "max_dd": 30784.354167,
+              "max_dd_pct": 12.325031,
+              "avg_bars": 15.066667,
+              "cagr": 3.612395,
+              "sortino": 0.866792,
+              "mar": 0.293094,
+              "calmar": 0.293094,
+              "profit_factor": 1.446662,
+              "avg_win": 6150.292423,
+              "avg_loss": -3036.692329
+            },
+            "n": 60
+          },
+          "per_pair": {
+            "BTC/USD": {
+              "stats": {
+                "n": 28,
+                "wins": 11,
+                "win_pct": 39.285714,
+                "pnl": 34275.723829,
+                "max_dd": 15131.296989,
+                "max_dd_pct": 6.058068,
+                "avg_bars": 16.357143,
+                "cagr": 2.664732,
+                "sortino": 1.169197,
+                "mar": 0.439865,
+                "calmar": 0.439865,
+                "profit_factor": 1.775708,
+                "avg_win": 7132.920283,
+                "avg_loss": -2599.199958
+              },
+              "n": 28
+            },
+            "ETH/USD": {
+              "stats": {
+                "n": 32,
+                "wins": 14,
+                "win_pct": 43.75,
+                "pnl": 13197.355218,
+                "max_dd": 22867.777789,
+                "max_dd_pct": 9.155498,
+                "avg_bars": 13.9375,
+                "cagr": 1.055584,
+                "sortino": 0.350599,
+                "mar": 0.115295,
+                "calmar": 0.115295,
+                "profit_factor": 1.212525,
+                "avg_win": 5378.227675,
+                "avg_loss": -3449.879569
+              },
+              "n": 32
+            }
+          }
+        },
+        "30d/15d": {
+          "combined": {
+            "stats": {
+              "n": 46,
+              "wins": 22,
+              "win_pct": 47.826087,
+              "pnl": 30647.218701,
+              "max_dd": 30835.639664,
+              "max_dd_pct": 12.345564,
+              "avg_bars": 20.543478,
+              "cagr": 2.387038,
+              "sortino": 0.528882,
+              "mar": 0.193352,
+              "calmar": 0.193352,
+              "profit_factor": 1.335459,
+              "avg_win": 5545.737425,
+              "avg_loss": -3806.625193
+            },
+            "n": 46
+          },
+          "per_pair": {
+            "BTC/USD": {
+              "stats": {
+                "n": 23,
+                "wins": 9,
+                "win_pct": 39.130435,
+                "pnl": 9913.018081,
+                "max_dd": 20215.983461,
+                "max_dd_pct": 8.093807,
+                "avg_bars": 20.695652,
+                "cagr": 0.799141,
+                "sortino": 0.282494,
+                "mar": 0.098735,
+                "calmar": 0.098735,
+                "profit_factor": 1.209827,
+                "avg_win": 6350.752646,
+                "avg_loss": -3374.553981
+              },
+              "n": 23
+            },
+            "ETH/USD": {
+              "stats": {
+                "n": 23,
+                "wins": 13,
+                "win_pct": 56.521739,
+                "pnl": 20734.20062,
+                "max_dd": 23412.274503,
+                "max_dd_pct": 9.373496,
+                "avg_bars": 20.391304,
+                "cagr": 1.638702,
+                "sortino": 0.611297,
+                "mar": 0.174823,
+                "calmar": 0.174823,
+                "profit_factor": 1.470001,
+                "avg_win": 4988.419194,
+                "avg_loss": -4411.524891
+              },
+              "n": 23
+            }
+          }
+        },
+        "55d/20d": {
+          "combined": {
+            "stats": {
+              "n": 37,
+              "wins": 16,
+              "win_pct": 43.243243,
+              "pnl": 54489.463829,
+              "max_dd": 31751.054056,
+              "max_dd_pct": 12.712066,
+              "avg_bars": 24.567568,
+              "cagr": 4.104214,
+              "sortino": 0.923913,
+              "mar": 0.32286,
+              "calmar": 0.32286,
+              "profit_factor": 1.712364,
+              "avg_win": 8186.281923,
+              "avg_loss": -3642.430807
+            },
+            "n": 37
+          },
+          "per_pair": {
+            "BTC/USD": {
+              "stats": {
+                "n": 19,
+                "wins": 7,
+                "win_pct": 36.842105,
+                "pnl": 12093.61831,
+                "max_dd": 22189.120388,
+                "max_dd_pct": 8.883786,
+                "avg_bars": 23.052632,
+                "cagr": 0.971665,
+                "sortino": 0.33554,
+                "mar": 0.109375,
+                "calmar": 0.109375,
+                "profit_factor": 1.294171,
+                "avg_win": 7600.634773,
+                "avg_loss": -3425.902092
+              },
+              "n": 19
+            },
+            "ETH/USD": {
+              "stats": {
+                "n": 18,
+                "wins": 9,
+                "win_pct": 50.0,
+                "pnl": 42395.845519,
+                "max_dd": 13917.693924,
+                "max_dd_pct": 5.572182,
+                "avg_bars": 26.166667,
+                "cagr": 3.247146,
+                "sortino": 1.311815,
+                "mar": 0.582742,
+                "calmar": 0.582742,
+                "profit_factor": 2.198292,
+                "avg_win": 8641.785262,
+                "avg_loss": -3931.13576
+              },
+              "n": 18
+            }
+          }
+        }
+      }
+    },
+    "4Hour": {
+      "bars_per_day": 6,
+      "atr_period_bars": 84,
+      "n_bars": {
+        "BTC/USD": 12281,
+        "ETH/USD": 12281
+      },
+      "best_mar_system": "30d/15d",
+      "systems": {
+        "20d/10d": {
+          "combined": {
+            "stats": {
+              "n": 121,
+              "wins": 49,
+              "win_pct": 40.495868,
+              "pnl": 78061.925905,
+              "max_dd": 32411.77768,
+              "max_dd_pct": 12.976598,
+              "avg_bars": 27.793388,
+              "cagr": 5.654251,
+              "sortino": 1.459517,
+              "mar": 0.435727,
+              "calmar": 0.435727,
+              "profit_factor": 1.457249,
+              "avg_win": 5077.195914,
+              "avg_loss": -2371.12047
+            },
+            "n": 121
+          },
+          "per_pair": {
+            "BTC/USD": {
+              "stats": {
+                "n": 62,
+                "wins": 26,
+                "win_pct": 41.935484,
+                "pnl": 32167.197563,
+                "max_dd": 23603.784567,
+                "max_dd_pct": 9.45017,
+                "avg_bars": 28.225806,
+                "cagr": 2.491467,
+                "sortino": 1.029024,
+                "mar": 0.263643,
+                "calmar": 0.263643,
+                "profit_factor": 1.416852,
+                "avg_win": 4205.156678,
+                "avg_loss": -2143.524335
+              },
+              "n": 62
+            },
+            "ETH/USD": {
+              "stats": {
+                "n": 59,
+                "wins": 23,
+                "win_pct": 38.983051,
+                "pnl": 45894.728342,
+                "max_dd": 20589.888735,
+                "max_dd_pct": 8.243507,
+                "avg_bars": 27.338983,
+                "cagr": 3.499957,
+                "sortino": 1.204038,
+                "mar": 0.424571,
+                "calmar": 0.424571,
+                "profit_factor": 1.49057,
+                "avg_win": 6062.979398,
+                "avg_loss": -2598.716606
+              },
+              "n": 59
+            }
+          }
+        },
+        "30d/15d": {
+          "combined": {
+            "stats": {
+              "n": 107,
+              "wins": 45,
+              "win_pct": 42.056075,
+              "pnl": 82798.45707,
+              "max_dd": 23540.478756,
+              "max_dd_pct": 9.424825,
+              "avg_bars": 28.775701,
+              "cagr": 6.012608,
+              "sortino": 1.757796,
+              "mar": 0.637954,
+              "calmar": 0.637954,
+              "profit_factor": 1.557649,
+              "avg_win": 5139.468337,
+              "avg_loss": -2394.800292
+            },
+            "n": 107
+          },
+          "per_pair": {
+            "BTC/USD": {
+              "stats": {
+                "n": 56,
+                "wins": 23,
+                "win_pct": 41.071429,
+                "pnl": 28518.165768,
+                "max_dd": 23933.506513,
+                "max_dd_pct": 9.58218,
+                "avg_bars": 28.678571,
+                "cagr": 2.239484,
+                "sortino": 0.926951,
+                "mar": 0.233713,
+                "calmar": 0.233713,
+                "profit_factor": 1.380981,
+                "avg_win": 4494.468878,
+                "avg_loss": -2268.321771
+              },
+              "n": 56
+            },
+            "ETH/USD": {
+              "stats": {
+                "n": 51,
+                "wins": 22,
+                "win_pct": 43.137255,
+                "pnl": 54280.291302,
+                "max_dd": 13860.977623,
+                "max_dd_pct": 5.549474,
+                "avg_bars": 28.882353,
+                "cagr": 4.091952,
+                "sortino": 1.595865,
+                "mar": 0.737358,
+                "calmar": 0.737358,
+                "profit_factor": 1.737274,
+                "avg_win": 5813.785953,
+                "avg_loss": -2538.724127
+              },
+              "n": 51
+            }
+          }
+        },
+        "55d/20d": {
+          "combined": {
+            "stats": {
+              "n": 98,
+              "wins": 37,
+              "win_pct": 37.755102,
+              "pnl": 73696.269358,
+              "max_dd": 23540.478756,
+              "max_dd_pct": 9.424825,
+              "avg_bars": 28.204082,
+              "cagr": 5.414335,
+              "sortino": 1.658864,
+              "mar": 0.574476,
+              "calmar": 0.574476,
+              "profit_factor": 1.54009,
+              "avg_win": 5679.678738,
+              "avg_loss": -2236.915474
+            },
+            "n": 98
+          },
+          "per_pair": {
+            "BTC/USD": {
+              "stats": {
+                "n": 51,
+                "wins": 19,
+                "win_pct": 37.254902,
+                "pnl": 26132.639957,
+                "max_dd": 20119.565656,
+                "max_dd_pct": 8.055205,
+                "avg_bars": 28.098039,
+                "cagr": 2.059336,
+                "sortino": 0.910196,
+                "mar": 0.255653,
+                "calmar": 0.255653,
+                "profit_factor": 1.38845,
+                "avg_win": 4916.149305,
+                "avg_loss": -2102.318651
+              },
+              "n": 51
+            },
+            "ETH/USD": {
+              "stats": {
+                "n": 47,
+                "wins": 18,
+                "win_pct": 38.297872,
+                "pnl": 47563.629401,
+                "max_dd": 15570.294536,
+                "max_dd_pct": 6.233828,
+                "avg_bars": 28.319149,
+                "cagr": 3.618832,
+                "sortino": 1.469396,
+                "mar": 0.580515,
+                "calmar": 0.580515,
+                "profit_factor": 1.687558,
+                "avg_win": 6485.626472,
+                "avg_loss": -2385.436107
+              },
+              "n": 47
+            }
+          }
+        }
+      }
+    }
+  }
+}
