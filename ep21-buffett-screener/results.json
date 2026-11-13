@@ -1,0 +1,64 @@
+{
+  "_source": "research note BUFFETT_BACKTEST_RESULTS_2026_07_23.md (transcribed by hand from its tables; nothing was re-run). Section refs in each key.",
+  "_setup_s1": {
+    "window": "2015-01-02 to 2025-01-02",
+    "rebalances": 10,
+    "frequency": "annual",
+    "universe": "today's S&P 500, 503 names (survivorship-biased)",
+    "portfolio": "top 15 by final score among gate-passers, equal weight",
+    "fundamentals": "SEC EDGAR, point-in-time (filings dated on or before the rebalance date)",
+    "costs_bps_on_turnover": 10
+  },
+  "kpi_bar": {"mar_min": 0.5, "sortino_min": 1.0},
+  "headline_s2": {
+    "strategy": {"cagr": 21.44, "maxdd": -35.15, "mar": 0.61, "sortino": 1.31, "total": 595.6},
+    "spy":      {"cagr": 13.00, "maxdd": -33.72, "mar": 0.39, "sortino": 0.95, "total": 238.7},
+    "drop_top5": {"cagr": 17.66, "maxdd": -37.42, "mar": 0.47, "sortino": 1.14, "total": 407.0}
+  },
+  "lookahead_audit_s3": {
+    "companies": 25, "facts_admitted": 804046, "facts_filed_after_asof": 0,
+    "aapl_net_income_bn": {"as_of_2018_fy2017": 48.4, "as_of_2022_fy2021": 94.7, "live": 112.0}
+  },
+  "breadth_s4": {
+    "names_held": 56, "net_positive": 42, "net_positive_pct": 75, "top5_share_gross_pos_pnl_pct": 39,
+    "top_contributors_pct": {"NVDA": 32, "COIN": 24, "LRCX": 17, "AVGO": 16, "AAPL": 15, "META": 12, "TSCO": 11, "GOOGL": 9},
+    "worst_pct": {"INTC": -3, "NUE": -2, "GILD": -2, "MOS": -2, "QCOM": -2},
+    "prior_rejects": {
+      "gap_trader": {"top_n": 3, "share_pct": 92, "outcome": "lottery, rejected"},
+      "statarb_pca": {"top_n": 5, "share_pct": 27, "net_positive": "55/96 (57%)", "outcome": "Sortino 1.53 to -0.51"},
+      "buffett": {"top_n": 5, "share_pct": 39, "net_positive": "42/56 (75%)", "outcome": "MAR 0.61 to 0.47"}
+    }
+  },
+  "survivorship_s5": {"coin_rank": 2, "coin_contrib_pct": 24, "coin_listed": 2021, "coin_joined_sp500": 2025},
+  "five_year_filter_s5b": {
+    "filtered":       {"cagr": 18.77, "maxdd": -37.25, "mar": 0.50, "sortino": 1.15},
+    "filtered_drop5": {"cagr": 15.71, "maxdd": -36.34, "mar": 0.43, "sortino": 1.05},
+    "cagr_cost_pp": 2.7, "mar_cost": 0.11,
+    "breadth": {"names_held": 60, "net_positive": 44, "net_positive_pct": 73, "top5_share_pct": 37}
+  },
+  "gates_financials_s5c": {
+    "date": "2026-08-10",
+    "result": {"cagr": 18.74, "maxdd": -36.29, "mar": 0.52, "sortino": 1.16, "drop5_mar": 0.44},
+    "breadth": {"names_held": 58, "net_positive_pct": 72, "top5_share_pct": 39},
+    "financials_never_selectable_before": 76
+  },
+  "ladder_s7": [
+    {"step": "raw + dual-class bug", "mar": 0.70},
+    {"step": "dual-class fixed", "mar": 0.61},
+    {"step": "+ recent-IPO filter", "mar": 0.50},
+    {"step": "+ drop best 5 names", "mar": 0.43}
+  ],
+  "settle_it_s7": {"data": "point-in-time index membership + delisted names (Sharadar / Norgate)", "cost_per_month_usd": "50-70"},
+  "_method_from_screener_docs": {
+    "_note": "screen METHOD only, from the screener's own docs and config. No picks, no alerts, no code.",
+    "gates": "market cap >= $2B; debt/equity <= 2.0; current ratio >= 1.0; ROE >= 10% (8% financials); interest coverage >= 3x; positive FCF; positive earnings",
+    "categories_weights": "valuation 28 / moat 24 / financials 18 / growth 18 / safety 12",
+    "combine": "geometric: QUALITY (moat+financials+growth, 0.60) x PRICE (valuation+safety, 0.40)",
+    "dcf": "two-stage owner-earnings DCF, growth capped 10%, discount 9%",
+    "edgar_traps": {
+      "visa_share_count_froze": 2010, "visa_naive_pe": 8.4, "visa_real_pe_approx": 34,
+      "booking_split_bug_pe": 1,
+      "dual_class": "GOOGL and GOOG are one issuer; dedupe by CIK"
+    }
+  }
+}
